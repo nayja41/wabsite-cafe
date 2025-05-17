@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brew & Bites - Cozy Cafe</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo">Brew & <span>Bites</span></h1>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#order" class="btn">Order Online</a></li>
+            </ul>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Your Daily Dose of Caffeine</h1>
+            <p>Specialty coffee, homemade pastries, and good vibes only</p>
+            <div class="hero-buttons">
+                <a href="#menu" class="btn">See Menu</a>
+                <a href="#" class="btn btn-outline">Visit Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu-section">
+        <div class="container">
+            <h2 class="section-title">Our Cafe Favorites</h2>
+            <div class="menu-categories">
+                <button class="category-btn active" data-category="coffee">Coffee</button>
+                <button class="category-btn" data-category="tea">Tea</button>
+                <button class="category-btn" data-category="food">Food</button>
+                <button class="category-btn" data-category="dessert">Desserts</button>
+            </div>
+            
+            <div class="menu-grid" id="coffee-menu">
+                <div class="menu-item">
+                    <img src="Espresso.jpg" alt="Espresso">
+                    <h3>Espresso</h3>
+                    <p>Strong and aromatic single shot</p>
+                    <span class="price">$3.50</span>
+                </div>
+                <div class="menu-item">
+                    <img src="Cappuccino.jpg" alt="Cappuccino">
+                    <h3>Cappuccino</h3>
+                    <p>Espresso with steamed milk foam</p>
+                    <span class="price">$4.50</span>
+                </div>
+                <div class="menu-item">
+                    <img src="Latte1.jpg" alt="Latte">
+                    <h3>Latte</h3>
+                    <p>Smooth espresso with lots of milk</p>
+                    <span class="price">$4.75</span>
+                </div>
+                <div class="menu-item">
+                    <img src="Cold Brew.jpg" alt="Cold Brew">
+                    <h3>Cold Brew</h3>
+                    <p>16oz of our signature cold brew</p>
+                    <span class="price">$4.25</span>
+                </div>
+            </div>
+            
+            <div class="menu-grid hidden" id="food-menu">
+                <div class="menu-item">
+                    <img src="Avocado Toast.jpg" alt="Avocado Toast">
+                    <h3>Avocado Toast</h3>
+                    <p>Sourdough, smashed avocado, chili flakes</p>
+                    <span class="price">$8.50</span>
+                </div>
+                <div class="menu-item">
+                    <img src="Breakfast Sandwich.jpg" alt="Breakfast Sandwich">
+                    <h3>Breakfast Sandwich</h3>
+                    <p>Egg, cheese, and bacon on croissant</p>
+                    <span class="price">$7.50</span>
+                </div>
+                <div class="menu-item">
+                    <img src="Quiche.jpg" alt="Quiche">
+                    <h3>Quiche of the Day</h3>
+                    <p>Homemade daily with seasonal ingredients</p>
+                    <span class="price">$7.00</span>
+                </div>
+                <div class="menu-item">
+                    <img src="Granola Bowl.jpg" alt="Granola Bowl">
+                    <h3>Granola Bowl</h3>
+                    <p>Yogurt, house-made granola, fresh fruits</p>
+                    <span class="price">$6.50</span>
+                </div>
+            </div>
+            
+            <a href="#" class="btn view-all">View Full Menu</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <h2 class="section-title">Our Story</h2>
+                <p>Founded in 2015, Brew & Bites started as a small coffee cart and has grown into your favorite neighborhood cafe. We roast our own beans and bake everything fresh daily.</p>
+                <p>Our mission is simple: serve great coffee and food in a space where everyone feels welcome.</p>
+                <div class="features">
+                    <div class="feature">
+                        <i class="fas fa-coffee"></i>
+                        <h4>Specialty Coffee</h4>
+                        <p>Direct trade beans from ethical sources</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-bread-slice"></i>
+                        <h4>Fresh Baked</h4>
+                        <p>Pastries made from scratch every morning</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-leaf"></i>
+                        <h4>Plant-Based</h4>
+                        <p>Plenty of vegan and gluten-free options</p>
+                    </div>
+                </div>
+            </div>
+            <div class="about-image">
+                <img src="restorant.jpg" alt="Cafe Interior">
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery-section">
+        <h2 class="section-title">Cafe Vibes</h2>
+        <div class="gallery-grid">
+            <img src="Cafe corner.jpg" alt="Cafe corner">
+            <img src="Coffee making.jpg" alt="Coffee making">
+            <img src="Pastries.jpg" alt="Pastries">
+            <img src="Outdoor seating.jpg" alt="Outdoor seating">
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="contact-info">
+                <h2 class="section-title">Visit Us</h2>
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>123 Coffee Street<br>Brewville, CA 90210</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-clock"></i>
+                    <p>Monday - Friday: 7am - 7pm<br>
+                    Saturday - Sunday: 8am - 6pm</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-phone-alt"></i>
+                    <p>(123) 456-7890</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <p>hello@brewandbites.com</p>
+                </div>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="contact-form">
+                <h3>Send us a message</h3>
+                <form>
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>Brew & Bites</h3>
+                    <p>Your neighborhood coffee spot</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe for special offers and events</p>
+                    <form>
+                        <input type="email" placeholder="Your Email">
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2024 Brew & Bites. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
